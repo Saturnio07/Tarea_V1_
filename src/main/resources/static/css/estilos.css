@@ -1,0 +1,41 @@
+/*Comentario*/
+
+* 
+{
+box-sizing: border-box;
+margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 80px 20px 0;
+    background-color: graytext;
+}
+
+header {
+    position: fixed;
+    background-color: gray;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%
+}
+
+aside {
+    position: fixed;
+    background-color: activecaption;
+    top: 80px;
+    left: 0;
+    bottom: 20px;
+    width: 20%
+}
+
+section {
+    overflow-y: scroll;
+    position: fixed;
+    background-color: appworkspace;
+    top: 80px;
+    left: 20%;
+    bottom: 20px;
+    width: 80%
+}
