@@ -1,1 +1,7 @@
+com\tienda\ProjectConfig.class
 com\tienda\TiendaApplication.class
+com\tienda\domain\Categoria.class
+com\tienda\controller\CategoriaController.class
+com\tienda\service\impl\CategoriaServiceImpl.class
+com\tienda\service\CategoriaService.class
+com\tienda\dao\CategoriaDao.class
