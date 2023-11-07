@@ -6,6 +6,7 @@ com\tienda\service\impl\CategoriaServiceImpl.class
 com\tienda\service\CategoriaService.class
 com\tienda\service\impl\FirebaseStorageServiceImpl.class
 com\tienda\domain\Producto.class
+com\tienda\controller\PruebasController.class
 com\tienda\ProjectConfig.class
 com\tienda\service\impl\ProductoServiceImpl.class
 com\tienda\controller\ProductoController.class

@@ -2,29 +2,27 @@ package com.tienda.domain;
 
 import jakarta.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 import lombok.Data;
 
-/**
- *
- * @author Dennis
- */
 @Data
 @Entity
 @Table(name = "categoria")
-
-/* Serializaci[on va almacenar datos de la bd*/
-
 public class Categoria implements Serializable {
-    
-    private static final long serialVersionUID = 1L; /*Poder hacer ciclo de sumatoria*/
-    
-    @Id /*Id es la llave de la tabla categoria*/
+
+    private static final long serialVersionUID = 1L;
+
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_categoria")
-    private long idCategoria;
+    private Long idCategoria;
     private String descripcion;
     private String rutaImagen;
     private boolean activo;
+
+    @OneToMany
+    @JoinColumn(name = "id_categoria", updatable = false)
+    List<Producto> productos;
 
     public Categoria() {
     }
