@@ -11,7 +11,8 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class CategoriaServiceImpl implements CategoriaService {
 
-     @Autowired
+    //La anotacion autowired crea un unico objeto sin hacer new.
+    @Autowired
     private CategoriaDao categoriaDao;
 
     @Override
@@ -41,5 +42,4 @@ public class CategoriaServiceImpl implements CategoriaService {
     public void delete(Categoria categoria) {
         categoriaDao.delete(categoria);
     }
-    
 }

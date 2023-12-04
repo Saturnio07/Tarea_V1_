@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
-      xmlns="http://www.w3.org/199/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
     <head th:replace="~{layout/plantilla :: head}">
         <title>TechShop</title>
     </head>
     <body>
-         <header th:replace="~{layout/plantilla :: header}"/>
-         
-        <section th:replace="~{categoria/fragmentos :: editarCategoria}"/>
-         
-         <footer th:replace="~{layout/plantilla :: footer}"/>
+        <header th:replace="~{layout/plantilla :: header}"></header>
+
+        <section th:replace="~{categoria/fragmentos :: editarCategoria}"></section>
+        
+        <footer th:replace="~{layout/plantilla :: footer}"></footer>
+
     </body>
 </html>
-
